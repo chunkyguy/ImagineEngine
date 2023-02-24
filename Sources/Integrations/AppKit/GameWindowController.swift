@@ -5,7 +5,7 @@
  *  See LICENSE file for license
  */
 
-import Cocoa
+import AppKit
 
 /// Window controller that can be used to present & manage an Imagine Engine game
 public class GameWindowController: NSWindowController {
@@ -14,12 +14,11 @@ public class GameWindowController: NSWindowController {
     private let viewController: GameViewController
 
     /// Initialize an instance of this window controller, optionally with a scene to present
-    public init(size: Size, scene: Scene? = nil) {
-        let scene = scene ?? Scene(size: size)
+    private init(size: Size, scene: Scene) {
         viewController = GameViewController(size: size, scene: scene)
 
         let window = NSWindow(
-            contentRect: viewController.view.bounds,
+            contentRect: NSRect(origin: .zero, size: size),
             styleMask: [.closable, .miniaturizable, .titled],
             backing: .buffered,
             defer: false
@@ -30,8 +29,16 @@ public class GameWindowController: NSWindowController {
         contentViewController = viewController
         window.center()
     }
-
+    
+    public convenience init(scene: Scene) {
+        self.init(size: scene.size, scene: scene)
+    }
+    
+    public convenience init(size: Size) {
+        self.init(scene: Scene(size: size))
+    }
+    
     required public convenience init?(coder: NSCoder) {
-        self.init(size: .zero, scene: nil)
+        self.init(size: .zero)
     }
 }

@@ -5,7 +5,7 @@
  *  See LICENSE file for license
  */
 
-import Cocoa
+import QuartzCore
 
 internal extension Image {
     var cgImage: CGImage? {

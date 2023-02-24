@@ -4,7 +4,4 @@
    <FileRef
       location = "group:AsteroidBlaster.xcworkspace/Playground.playground/">
    </FileRef>
-   <FileRef
-      location = "group:../../../ImagineEngine.xcodeproj">
-   </FileRef>
 </Workspace>

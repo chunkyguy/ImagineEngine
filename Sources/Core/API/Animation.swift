@@ -45,7 +45,7 @@ public extension Animation {
     init(name: String,
          frameCount: Int,
          frameDuration: TimeInterval,
-         frameIndexSeparator: String = "/",
+         frameIndexSeparator: String = "_",
          repeatMode: RepeatMode = .forever,
          autoResize: Bool = true,
          ignoreTextureNamePrefix: Bool = false,

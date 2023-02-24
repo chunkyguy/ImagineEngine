@@ -5,7 +5,7 @@
  *  See LICENSE file for license
  */
 
-import Cocoa
+import AppKit
 
 /**
  *  View controller that can be used to manage & present an Imagine Engine game

@@ -37,14 +37,14 @@ public struct BlockTextureCollection {
             return
         }
 
-        top = Texture(name: "\(name)/top", format: textureFormat)
-        topLeft = Texture(name: "\(name)/topLeft", format: textureFormat)
-        topRight = Texture(name: "\(name)/topRight", format: textureFormat)
-        right = Texture(name: "\(name)/right", format: textureFormat)
-        left = Texture(name: "\(name)/left", format: textureFormat)
-        center = Texture(name: "\(name)/center", format: textureFormat)
-        bottom = Texture(name: "\(name)/bottom", format: textureFormat)
-        bottomLeft = Texture(name: "\(name)/bottomLeft", format: textureFormat)
-        bottomRight = Texture(name: "\(name)/bottomRight", format: textureFormat)
+        top = Texture(name: "\(name)_top", format: textureFormat)
+        topLeft = Texture(name: "\(name)_topLeft", format: textureFormat)
+        topRight = Texture(name: "\(name)_topRight", format: textureFormat)
+        right = Texture(name: "\(name)_right", format: textureFormat)
+        left = Texture(name: "\(name)_left", format: textureFormat)
+        center = Texture(name: "\(name)_center", format: textureFormat)
+        bottom = Texture(name: "\(name)_bottom", format: textureFormat)
+        bottomLeft = Texture(name: "\(name)_bottomLeft", format: textureFormat)
+        bottomRight = Texture(name: "\(name)_bottomRight", format: textureFormat)
     }
 }

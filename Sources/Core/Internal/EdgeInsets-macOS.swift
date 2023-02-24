@@ -4,7 +4,7 @@
  *  See LICENSE file for license
  */
 
-import Cocoa
+import AppKit
 
 extension EdgeInsets: Equatable {
     public static func ==(lhs: EdgeInsets, rhs: EdgeInsets) -> Bool {

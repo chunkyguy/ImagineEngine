@@ -4,7 +4,7 @@
  *  See LICENSE file for license
  */
 
-import Cocoa
+import Foundation
 
 extension ClickGestureRecognizer {
     func addTarget(_ target: AnyObject, action: Selector) {
